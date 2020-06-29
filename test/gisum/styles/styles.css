@@ -1,0 +1,1062 @@
+
+@font-face {
+    font-family: spad-Rohan;
+    src: url(../font/spadRohanRound-Regular.woff2) format('woff2'), url(../font/spadRohanRound-Regular.html) format('woff'), url(../font/spadRohanRound-Regular.ttf) format('truetype')
+}
+
+
+
+
+
+body{
+    padding: 0;
+    overflow: hidden;
+    margin: 0%;
+    width: 100%;
+    font-family: spad-Rohan;
+ 
+   
+}
+html{
+    overflow-x: hidden;
+}
+
+
+
+
+.header{
+    background-color: white;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.logo{
+  position: absolute;
+  width: 126px;
+  height: 103px;
+  top: -1%;
+  left: 4%;
+  background-color:transparent;
+  z-index: 666666;
+
+}
+.logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.wawe{
+    position: absolute;
+    width: 100%;
+    height: 143px;
+    bottom: 0;
+    left: 0;
+    background: url(../images/wave.png);
+    animation: animate 10s linear infinite;
+    z-index: 9;
+}
+@keyframes animate {
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 1360px;
+
+    }
+
+}
+.wawe:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 143px;
+    bottom: 0;
+    left: 0;
+    background: url(../images/wave.png);
+    opacity: 0.4;
+    animation: animate-reverse 10s linear infinite;
+}
+@keyframes animate-reverse {
+    0%{
+        background-position: 1360px;
+    }
+    100%{
+        background-position: 0;
+
+    }
+
+}
+.wawe:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 143px;
+    bottom: 0;
+    left: 0;
+    background: url(../images/wave.png);
+    opacity: 0.6;
+    animation-delay: -5s;
+    animation: animate 20s linear infinite;
+}
+
+
+
+
+/* =====myswiper==== */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+   background-color: white;
+    position: relative;
+    
+  }
+  .swiper-slide2 {
+    font-size: 18px;
+    color:#fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 60px;
+  }
+  .parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+  }
+  .swiper-slide2 .title {
+    font-size: 41px;
+    font-weight: 300;
+    text-align: right;
+    direction: rtl;
+    color: rgb(226, 196, 121);
+  }
+  .swiper-slide2 .subtitle {
+    font-size: 21px;
+    text-align: right;
+    direction: rtl;
+    color: black;
+    
+  }
+  .swiper-slide2 .text {
+    font-size: 14px;
+    max-width: 400px;
+    line-height: 1.3;
+    text-align: right;
+    direction: rtl;
+    float: right;
+  
+    line-height:25px;
+ 
+  }
+  .swiper-slide2 .text p {
+      margin-top:45px;
+  }
+
+
+  .mylogocontainer{
+    position: relative;
+
+    width: 466px;
+    height: 400px;
+   
+    top: -54px;
+
+
+
+  }
+  .mylogocontainer h1{
+    color: rgb(226, 196, 121);
+    text-align: center;
+    position: relative;
+    top: -76px;
+
+  }
+  #mysvglogo{
+    display: block;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+  }
+
+  .swiper-button-next.swiper-button-white, .swiper-button-prev.swiper-button-white {
+    --swiper-navigation-color: rgb(226, 196, 121);
+}
+
+
+
+/* ===main==== */
+.maintext{
+  width: 100%;
+  min-height: 800px;
+  padding: 45px;
+  position: relative;
+  background-color: rgb(226, 196, 121);
+
+}
+.maintext h2{
+  text-align: center;
+  font-weight: 900;
+  direction: rtl;
+}
+.maintext h3{
+    text-align: right;
+    font-weight: 900;
+    direction: rtl;
+  }
+  .maintext h5{
+    text-align: right;
+    font-size: 1rem;
+    direction: rtl;
+  }
+.maintext p {
+  text-align: center;
+  direction: rtl;
+  line-height: 35px;
+
+}
+#curvsvg{
+  position: absolute;
+  bottom: 0;
+width: 100%;
+  left: 0;
+  z-index: 888;
+}
+
+#curvsvg path  {
+fill:white;
+  
+}
+#midbgsvg path, #bottomalbumwawe path ,#bottomsvg path {
+  fill:rgb(226, 196, 121) ;
+}
+
+/* ====midbackground=== */
+.midbackground{
+    width: 100%;
+    height: 800px;
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-size:cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover; */
+   padding:20px 57px;
+    position: relative;
+    
+  
+  }
+  .midbackground h1{
+    text-align: center;
+    direction: rtl;
+    text-align: center;
+    font-size: 82px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    padding-top: 157px;
+  
+  }
+  #midbgsvg{
+    position: absolute;
+    left: 0;
+    top: 0%;
+    width: 100%;
+  }
+  #bottomsvg{
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    width: 100%;
+  }
+  .logoimgcontainer{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  
+    position: relative;
+  
+  
+  }
+  .logoimgcontainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity:0.2;
+  
+  
+  }
+  .mymidtxt{
+    position: relative;
+    z-index: 80;
+    top: 252px;
+  
+  }
+  .mymidtxt p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    direction: rtl;
+    font-size: 27px;
+    font-weight: 900;
+    background-color: #81818171;
+  } 
+
+  /* =====album====== */
+
+#albom{
+    background-color: rgb(226, 196, 121);
+    position: relative;
+  
+  }
+  #albom h1{
+    color: black;
+    text-align: center;
+    direction: rtl;
+  }
+
+  .albomphoto{
+  
+  
+    border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;
+    padding: 0%                                                                                                                                                                                                      ;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+   
+  }
+  .albomphoto:hover{
+    border-radius: 0;
+  }
+  .albomphoto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+  }
+  
+#bottomalbumwawe{
+    position: absolute;
+    z-index: 2;
+    top:0;
+    left: 0;
+    width: 100%;
+  }
+
+
+  .bridevideo{
+    height: 300px;
+  background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;
+    padding: 0%                                                                                                                                                                                                      ;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+  
+  }
+  
+  .bridevideo:hover{
+    border-radius: 0;
+  }
+  .bridevideo video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+  }
+  .albomphotokh{
+    height: 500px;
+  
+  }
+  .albomimgcontainer{
+    width: 100%;
+    height: 50%;
+  }
+  .albumtxtcontainer{
+    width: 100%;
+    height: 50%;
+  }
+  .albumtxtcontainer h3{
+    text-align: center;
+    direction: rtl;
+    text-align: center;
+    padding-top: 16px;
+  
+    color:black;
+    
+  
+  }
+  .albumtxtcontainer p{
+    color:black;
+    text-align: center;
+    direction: rtl;
+   
+  
+  
+  
+  }
+
+/* ======subject===== */
+
+.subject{
+   
+    width: 100%;
+    min-height: 1500px;
+    background-color: white;
+}
+.subject h1{
+  font-weight: 900;
+  text-align: center;
+  direction: rtl;
+  color: rgb(226, 196, 121);
+  
+
+
+} 
+
+
+
+/* ======slider===== */
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+  display: none;
+}
+ .swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .swiper-slide1 {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    /* border-radius: 100px; */
+    overflow: hidden;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: relative;
+
+
+
+  }
+
+
+.swiper-slide1 img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+  }
+  .swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+  
+}
+
+
+
+.swiper-slide1 h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  top: -376px;
+  color: white;
+
+}
+.swiper-slide1 a.info {
+  display: inline-block;
+  /* display: inline-block; */
+  text-decoration: none;
+  padding: 7px 14px;
+  /* border: 1px solid #fff; */
+  margin: 50px 0 0 0;
+  background-color: rgba(0, 0, 0, 0.171);
+  box-shadow: 0 0 100px #fff;
+  top: 312px;
+  position: absolute;
+ text-align: center;
+ width: 100%;
+  /* left: 119px; */
+  color: white;
+  transition: 0.5s;
+}
+
+.swiper-slide1 a.info:hover {
+  box-shadow: 0 0 100px rgb(153, 143, 5);
+  color: rgb(149, 149, 223);
+}
+
+
+:root {
+  --swiper-theme-color: white;
+}
+
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+  filter: grayscale(1) blur(3px);
+  -webkit-filter: grayscale(1) blur(3px);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  border: 1px solid #fff;
+  margin: 50px 0 0 0;
+  background-color: transparent;
+  
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect a.info, .hovereffect h2 {
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.hovereffect:hover a.info, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.hovereffect h6 {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  
+  .hovereffect a.info, .hovereffect h6 {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .hovereffect:hover a.info, .hovereffect:hover h6 {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+
+
+
+/* ====footer==== */
+
+.footer{
+    padding: 0;
+      width:100%;
+     min-height: 300px;
+      position: relative;
+      background-color: rgb(105, 105, 105);
+      overflow: hidden;
+    
+    }
+    .aboutfooter ul{
+      list-style: none;
+      position: absolute;
+      bottom: 30%;
+      /* left: 0%; */
+      z-index: 5;
+      align-items: center;
+      
+    }
+    .aboutfooter ul li {
+      float: left;
+      margin: 10px;
+      
+    }
+    .aboutfooter ul li a{
+      color: white;
+      font-size: 50px;
+      display: block;
+      -webkit-transition: all 0.4s ease-in;
+      transition: all 0.4s ease-in;
+      
+      
+    }
+    .aboutfooter ul li a :hover{
+      font-size: 55px;
+      color:#f5e3e3;
+     
+    
+    }
+    
+    
+    .aboutme{
+      position: relative;
+    
+      z-index: 99999;
+    
+    }
+    
+    .social , .map ,.adres{
+      height: 300px;
+    
+    
+     
+    
+    }
+    .adres{
+      padding: 0  60px;
+    }
+    .adres p{
+      color: white;
+      direction: rtl;
+      text-align: center;
+    }
+     .map{
+       overflow: hidden;
+       border-radius: 10px;
+       position: relative;
+       z-index: 9999;
+     }
+     .mapcontainer{
+       width:200px;
+       height: 200px;
+       margin: auto;
+
+
+     }
+     .map iframe{
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+       border-radius: 10px;
+     }
+     .social h6 , .adres h6, .mapcontainer h6{
+       color: white;
+       direction: rtl;
+       text-align:center;
+
+     }
+    
+    
+    .aboutfooter{
+      width: 100%;
+    
+    background-color:  rgb(105, 105, 105);
+      overflow: hidden;
+    }
+    
+    
+    
+    
+    .copyrught{
+      width: 100%;
+      height: 50px;
+      background-color:  rgb(80, 79, 79);
+    }
+    
+    .copyrught p {
+      text-align: center;
+      color: white;
+      line-height: 50px;
+    }
+
+    .copyrught a {
+      text-decoration: none;
+      color: rgb(196, 192, 192);
+    }
+    .mylogofooter{
+      width: 300px;
+      height: 200px;
+      position: absolute;
+      z-index: 999999;
+   
+      bottom: 0%;
+      left: 37%;
+      opacity: 0.3;
+
+    }
+    .mylogofooter img {
+      width:  100%; 
+      height: 100%;
+      object-fit: cover;
+    } 
+    
+    /* ====menuhiding==== */
+    
+    
+    .sidenav , #myspan{
+      display: none;
+    }
+    /* menu */
+    .menucontainer{
+      position: absolute;
+      width: 100%; 
+      height:70px ;
+      z-index: 9999 ;
+      right:0%;
+      top: 0%;
+ 
+      
+    
+    
+    
+    }
+    .menucontainer ul{
+      height: 100%;
+      float: right;
+    }
+    
+    .menucontainer ul li {
+      list-style: none;
+      line-height: 44px;
+      /* margin: 18px; */
+      font-weight: 600;
+      float: left;
+     
+    
+     
+    
+      
+    
+    }
+    .menucontainer ul li a{
+      text-decoration: none;
+      color:rgb(226, 196, 121);
+      text-shadow: black 1px 1px 1px;
+   
+    
+      display: block;
+      text-align: center;
+      direction: rtl;
+      padding: 12px 16px;
+     
+      
+    
+      
+    }
+    .menucontainer ul li a:hover{
+      
+      background-color: rgb(226, 196, 121);
+      color:black;
+      font-weight: 950;
+      text-shadow: black 0px 0px;
+      
+    }
+    .menucontainer ul li:hover{
+      border-bottom: 3px solid white;
+     color: white;
+      font-weight: 950;
+    
+    }
+    .dropdown-content {
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.5s linear;
+      /* display: none; */
+      position: absolute;
+      color: black;
+      transition: 0.5s;
+      min-width: 160px;
+      background-color: rgba(226, 196, 121, 0.829);
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      /* right: 65px; */
+    }
+    .dropdown:hover .dropdown-content {
+      /* display: block; */
+      visibility: visible;
+      opacity: 1;
+      color: black;
+     
+     
+    }
+
+    
+    .dropdown-content a {
+      color: black;
+     
+      text-decoration: none;
+      display: block;
+      text-align: right;
+      direction: rtl;
+    }
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====medias==== */
+
+
+@media only screen and  (max-width: 1200px){
+  /* .mylogofooter{
+    display: none;
+  } */
+
+
+}
+@media only screen and  (max-width: 972px){
+  .aboutfooter ul{
+    left: 25%;
+  }
+  .mylogofooter{
+    left: 27%;
+  }
+
+
+}
+    @media only screen and  (max-width: 844px){
+        /* menudisapear */
+        .menucontainer{
+          display: none;
+        }
+        .sidenav , #myspan{
+          display: block;
+        }
+        
+        
+        
+           .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background-color: rgb(136, 130, 130);
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+          }
+          
+          .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #ffffff;
+            display: block;
+            transition: 0.3s;
+            text-align: right;
+            direction: rtl;
+          }
+          
+          .sidenav a:hover {
+            color: #161616; 
+            background-color: rgb(226, 196, 121);
+          }
+          
+          .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+          }
+          #main {
+            transition:  0.5s;
+            position: relative;
+          
+          }
+         .header span{
+            position: absolute;
+            right: 5%;
+            color: rgb(226, 196, 121);
+            z-index: 999999;
+        }
+        .dropdown-btn {
+          padding: 6px 8px 6px 16px;
+          text-decoration: none;
+          font-size: 20px;
+          color: white;
+          display: block;
+          border: none;
+          background: none;
+          width: 100%;
+          text-align: left;
+          cursor: pointer;
+          outline: none;
+          text-align: right;
+          direction: rtl;
+          transition: 0.3s;
+          
+          
+        }
+        .dropdown-btn a{
+          font-size: 20px;
+        
+        }
+        .sidenav a:hover, .dropdown-btn:hover {
+          color:black;
+          background-color: rgb(226, 196, 121);
+        }
+        .dropdown-container {
+          display: none;
+          transition: 0.5s;
+         
+        
+        }
+        .dropdown-container a {
+        font-size: 15px;
+        margin-right: 20px;
+      
+         
+        
+        }
+        
+      
+      }
+
+
+ 
+@media only screen and (max-width: 767px) {
+  
+    .hovereffect a.info, .hovereffect h2 {
+      opacity: 1;
+      filter: alpha(opacity=100);
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+    .aboutfooter ul{
+      left: 16%;
+    }
+    .mylogofooter{
+      left: 19%;
+    }
+  
+
+      
+  
+  }
+
+  @media only screen and  (max-width: 622px){
+   
+    
+ 
+ 
+
+  .mylogocontainer{
+    width: 400px;
+    height: 400px;
+  }
+  .copyrught p{
+    font-size: 11px;
+  }
+    
+ }
+
+ 
+@media only screen and  (max-width: 462px){
+
+   .mylogocontainer{
+    width: 300px;
+    height: 300px;
+  }
+  .aboutfooter ul{
+    left: 3%;
+  }
+  .mylogofooter{
+    left: 6%;
+  }
+
+  
+  }
+  @media only screen and  (max-width: 357px){
+    .copyrught p{
+      font-size: 9px;
+    }
+      
+   
+
+
+  }
